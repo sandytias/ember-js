@@ -1,0 +1,11 @@
+Detail Product
+<hr>
+Tipe Handphone: {{this.model.name}} <br>
+Description: {{this.model.description}} <br>
+Purchase Price: {{this.model.purchasePrice}} <br>
+Sell Price: {{this.model.sellPrice}} <br>
+Ringtone Mode: {{if this.model.item.isPolyphonic "Polyphonic" "Monophonic"}} <br> 
+
+<LinkTo @route="product">Back to list</LinkTo>
+{{page-title "Product\detail"}}
+{{outlet}}
